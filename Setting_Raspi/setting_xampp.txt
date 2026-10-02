@@ -12,4 +12,6 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
 sudo mysql -u root -p
 
-GRANT ALL PRIVILEGES ON *.* TO 'otics_tps'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+CREATE USER 'otics_tps'@'%' IDENTIFIED BY 'sukatno_ali';
+GRANT ALL PRIVILEGES ON *.* TO 'otics_tps'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
